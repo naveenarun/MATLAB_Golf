@@ -1,0 +1,6 @@
+% This program plays the first five notes of the C major scale in both
+% directions, and then plays the major third both ascending and descending.
+
+% Character count: 132
+
+a=2^13;n=4;t='ceghjhgec1cgjgc'-99;t=2.^(t/12);sound(arrayfun(@(x).2*sin(pi*x/a*440*2^(1/4)*t(floor((x-1)/a*n)+1)),1:a*size(t,2)/n));
