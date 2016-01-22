@@ -5,3 +5,6 @@
 
 % MATLAB Code (To be entered in the command prompt after the >> symbol):
 a=2^13;n=4;t='ceghjhgec1cgjgc'-99;t=2.^(t/12);sound(arrayfun(@(x).2*sin(pi*x/a*440*2^(1/4)*t(floor((x-1)/a*n)+1)),1:a*size(t,2)/n));
+
+
+% another good tune: 'cgjghlolmqtqoo'
