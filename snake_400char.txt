@@ -1,0 +1,4 @@
+% A sub-400-character snake program for MATLAB
+
+f=@(x,y)get(x,'CurrentKey');a=figure;a.KeyPressFcn=f;z=70;q=z;p=z;s=zeros(q,p);h=q/2;i=p/2;v=[h;i];c=randi(z);d=randi(z);spy(s);while 1;s(d,c)=2;e = f(a);h=h+(e==100)-(e==97);h=h+q*((h==0)-(h==q+1));i=i+(e==115)-(e==119);i=i+p*((i==0)-(i==p+1));if s(i,h)==1&e~=48;break;end;if s(i,h)~=2;s(v(2,1),v(1,1))=0;v=v(:,2:end);else;s(c,d)=0;c=randi(z);d=randi(z);end;v=[v [h;i]];s(i,h)=s(i,h)+1;spy(s);drawnow;end
+
